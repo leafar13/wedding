@@ -3,7 +3,7 @@
 #countdown {
     white-space: nowrap;
     position: fixed;
-    top: 81%;
+    top: 82%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: 'Alex Brush', cursive;
@@ -13,7 +13,7 @@
     padding: 20px;
     z-index: 9999;
     @media (max-width: 768px) {
-        font-size: 18px;
+        font-size: 4vw; /* Tamaño relativo para dispositivos más pequeños */
         padding: 10px;
     }
 }
