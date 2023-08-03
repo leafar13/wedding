@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     // Fecha objetivo de la boda (cambia la fecha a la de tu boda)
-    var fechaObjetivo = new Date("2023-11-10 14:00:00").getTime();
+    var fechaObjetivo = new Date("2023-10-14 10:30").getTime();
   
     var intervalo = setInterval(function() {
       var fechaActual = new Date().getTime();
