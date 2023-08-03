@@ -2,12 +2,12 @@
 
 #countdown {
     white-space: nowrap;
-    position: relative;
-    top: 61%;
+    position: fixed;
+    top: 81%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: 'Alex Brush', cursive;
-    font-size: 6vw;
+    font-size: 6vh;
     color: #7D5642;
     text-align: center;
     padding: 20px;
@@ -19,10 +19,8 @@
 }
 
 #container {
-    /* Asegura que el contenedor ocupe todo el espacio disponible */
-    width: 100%;
-    height: 100%;
-    display: flex;
+    height: max-content;
+    display: max-content;
     justify-content: center; /* Centra el contenido horizontalmente */
     align-items: center; /* Centra el contenido verticalmente */
 }
