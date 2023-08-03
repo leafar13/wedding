@@ -6,7 +6,7 @@
     top: 82%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-family: 'Alex Brush', cursive;
+    font-family: 'The Seasons', sans-serif;
     font-size: 3vh;
     color: #7D5642;
     text-align: center;
@@ -24,4 +24,10 @@ body {
     height: 100vh; /* Altura del viewport */
     width: 100vw; /* Ancho del viewport */
 }
+
+@font-face {
+    font-family: 'The Seasons'; /* Nombre que le asignas a la fuente */
+    src: url('The\ Seasons\ Light.ttf') format('truetype'); /* Ruta relativa al archivo de la fuente .ttf */
+    /* Añade más formatos (woff, woff2, etc.) para compatibilidad con diferentes navegadores */
+  }
 

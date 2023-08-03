@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     // Fecha objetivo de la boda (cambia la fecha a la de tu boda)
-    var fechaObjetivo = new Date("2023-10-14 10:30").getTime();
+    var fechaObjetivo = new Date("2023-08-02 21:49").getTime();
   
     var intervalo = setInterval(function() {
       var fechaActual = new Date().getTime();
@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
       // Si la fecha objetivo ha pasado, mostrar un mensaje especial
       if (tiempoRestante < 0) {
         clearInterval(intervalo);
-        countdownElement.innerHTML = "¡Nuestra boda ha llegado! ¡Gracias por celebrar con nosotros!";
+        countdownElement.innerHTML = "¡Nuestra boda ha llegado!";
       }
     }, 1000);
   });
