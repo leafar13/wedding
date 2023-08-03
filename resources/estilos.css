@@ -18,9 +18,3 @@
     }
 }
 
-#container {
-    height: max-content;
-    display: max-content;
-    justify-content: center; /* Centra el contenido horizontalmente */
-    align-items: center; /* Centra el contenido verticalmente */
-}
