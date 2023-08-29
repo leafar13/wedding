@@ -18,6 +18,17 @@
     }
 }
 
+#mensaje {
+    white-space: nowrap;
+    position: fixed;
+    top:41%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'The Seasons', sans-serif;
+    font-size: 3vh;
+    color: #7D5642;
+    text-align: center;
+}
 body {
     margin: 0;
     padding: 0;
@@ -31,18 +42,7 @@ body {
     /* Añade más formatos (woff, woff2, etc.) para compatibilidad con diferentes navegadores */
   }
 
-/* Ocultar los controles del reproductor de audio */
-audio::-webkit-media-controls-panel,
-audio::-webkit-media-controls-enclosure,
-audio::-webkit-media-controls-panel,
-audio::-webkit-media-controls-play-button,
-audio::-webkit-media-controls-start-playback-button,
-audio::-moz-media-controls-panel,
-audio::-moz-media-controls-play-button,
-audio::-moz-media-controls-volume-slider {
-  display: none !important;
-}
+ 
 
-#audio-controls {
-    display: none;
-}
+
+
