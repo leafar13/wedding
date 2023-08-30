@@ -8,24 +8,25 @@
 </head><body>
 
  
-  <script>
-      // Obtener el valor del parámetro "mensaje" desde la URL
-      const params = new URLSearchParams(window.location.search);
-      const mensaje = params.get('mensaje');
-
-      // Mostrar el mensaje en el elemento <div>
-      const mensajeDiv = document.getElementById('mensaje');
-      mensajeDiv.textContent = mensaje;
-  </script>
 
 
 <div style="position: relative; width: 100%; height: 0; padding-top: 140.0000%;
 padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-bottom: 0.9em; overflow: hidden;
 border-radius: 8px; will-change: transform;">
-<iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;" src="https://www.canva.com/design/DAFp5Cw5EDE/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+<iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFp5Cw5EDE&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
 </iframe>
 
 <div id="countdown"></div><div id="mensaje"></div>
+<script>
+  // Obtener el valor del parámetro "mensaje" desde la URL
+  const params = new URLSearchParams(window.location.search);
+  const mensaje = params.get('mensaje');
+
+  // Mostrar el mensaje en el elemento <div>
+  const mensajeDiv = document.getElementById('mensaje');
+  mensajeDiv.textContent = mensaje;
+</script>
 </div>
 
 
@@ -33,6 +34,6 @@ border-radius: 8px; will-change: transform;">
   
    <script src="resources/cuenta_regresiva.js"></script> <!-- Agregamos el archivo JavaScript -->
    
-
+ 
 
 </body></html>
