@@ -17,15 +17,23 @@
      src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFs_ZY5Zps&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
    </iframe>
 
-<div id="countdown"></div><div id="mensaje"></div>
+<div id="countdown"></div><div id="mensaje"></div><div id="espacios"></div>
   <script>
     // Obtener el valor del parámetro "mensaje" desde la URL
     const params = new URLSearchParams(window.location.search);
     const mensaje = params.get('mensaje');
-
+    const espacios = params.get('espacios');
     // Mostrar el mensaje en el elemento <div>
     const mensajeDiv = document.getElementById('mensaje');
     mensajeDiv.textContent = mensaje;
+
+    // Mostrar el mensajeEspacios en el elemento <div>
+  const texto1= 'Hemos reservado';
+  const texto2= 'en su honor';
+  const mensajeEspacios= texto1+'<br>'+espacios+'<br>'+texto2;
+  const espaciosDiv = document.getElementById('espacios');
+  //espaciosDiv.textContent = mensajeEspacios;
+  espaciosDiv.innerHTML= mensajeEspacios;
 </script>
 </div>
 

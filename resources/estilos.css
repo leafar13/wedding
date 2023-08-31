@@ -29,6 +29,18 @@
     color: #7D5642;
     text-align: center;
 }
+
+#espacios {
+    white-space: nowrap;
+    position: fixed;
+    top:83%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'The Seasons', sans-serif;
+    font-size: 2vh;
+    color: #7D5642;
+    text-align: center;
+}
 body {
     margin: 0;
     padding: 0;
