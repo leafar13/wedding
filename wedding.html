@@ -52,7 +52,36 @@
           });
   }
   </script>
+
+<script>
+  window.addEventListener('beforeinstallprompt', (event) => {
+    // Evita que el navegador maneje el evento
+    event.preventDefault();
+    
+    // Muestra el banner de instalación cuando sea apropiado
+    const installButton = document.getElementById('install-button');
+    installButton.style.display = 'block';
+    
+    installButton.addEventListener('click', () => {
+      // Muestra el cuadro de instalación
+      event.prompt();
+      
+      // Espera a que el usuario responda
+      event.userChoice.then((choiceResult) => {
+        if (choiceResult.outcome === 'accepted') {
+          console.log('El usuario aceptó instalar la PWA');
+        } else {
+          console.log('El usuario rechazó la instalación de la PWA');
+        }
+        
+        // Oculta el botón de instalación
+        installButton.style.display = 'none';
+      });
+    });
+  });
+</script>
 </div>
+<button id="install-button" style="display: none;">Instalar PWA</button>
 
 
 
