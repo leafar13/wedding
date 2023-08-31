@@ -4,14 +4,16 @@ const CACHE_NAME = 'mi-pwa-cache-v1';
 // Lista de recursos a cachear
 const urlsToCache = [
   '/',
-  '/wedding.html',
-  '/manifest.json',
-  '/resources/boda.png',
-  '/resources/estilos.css',
-  '/resources/cuenta_regresiva.js',
-  '/resources/The%20Seasons%20Light.ttf',
-  '/resources/The%20Seasons%20Regular.ttf'
+  'wedding.html',
+  'manifest.json',
+  'resources/boda.png',
+  'resources/estilos.css',
+  'resources/cuenta_regresiva.js',
+  'resources/The%20Seasons%20Light.ttf',
+  'resources/The%20Seasons%20Regular.ttf'
 ];
+
+
 
 // Instalación del Service Worker
 self.addEventListener('install', event => {
@@ -34,17 +36,18 @@ self.addEventListener('activate', event => {
   );
 });
 
+
 // Intercepción de solicitudes y manejo de caché
 self.addEventListener('fetch', event => {
-  event.respondWith(
-    caches.match(event.request)
-      .then(response => {
-        // Devuelve el recurso desde el caché si está disponible
-        if (response) {
-          return response;
-        }
-        // Si el recurso no está en el caché, realiza una solicitud de red
-        return fetch(event.request);
-      })
-  );
-});
+    event.respondWith(
+      caches.match(event.request)
+        .then(response => {
+          // Devuelve el recurso desde el caché si está disponible
+          if (response) {
+            return response;
+          }
+          // Si el recurso no está en el caché, realiza una solicitud de red
+          return fetch(event.request);
+        })
+    );
+  });  
