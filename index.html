@@ -41,15 +41,15 @@
   espaciosDiv.innerHTML= mensajeEspacios;
 
 
+    var mensajeSinEspacios=mensaje.replace(" ","%20");
 
-
-  var pagina= "index.html?mensaje=";
+  var pagina= "/index.html?mensaje=";
   
   
   var myDynamicManifest = {
     "name": "Nuestra Boda JyK",
     "short_name": "Juan y Karla",
-    "start_url": pagina + mensaje+"&espacios="+espacios,
+    "start_url": pagina + mensajeSinEspacios+"&espacios="+espacios,
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#000000",
