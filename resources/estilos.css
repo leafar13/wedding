@@ -3,11 +3,11 @@
 #countdown {
     white-space: nowrap;
     position: fixed;
-    top: 76%;
+    top: 66%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: 'The Seasons', sans-serif;
-    font-size: 2.1vh;
+    font-size: 1.5vh;
     color: #7D5642;
     text-align: center;
     padding: 20px;
@@ -21,11 +21,11 @@
 #mensaje {
     white-space: nowrap;
     position: fixed;
-    top:32%;
+    top:27%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: 'The Seasons', sans-serif;
-    font-size: 2.5vh;
+    font-size: 3vh;
     color: #7D5642;
     text-align: center;
 }
@@ -33,7 +33,7 @@
 #espacios {
     white-space: nowrap;
     position: fixed;
-    top:83%;
+    top:90%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: 'The Seasons', sans-serif;
