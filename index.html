@@ -73,7 +73,7 @@
 
 
 <script>
-  if ('serviceWorker' in navigator) {
+  if ('serviceWorker' in navigator ) {
       navigator.serviceWorker.register('service-worker.js')
           .then(function(registration) {
               console.log('Service Worker registrado con éxito:', registration);
@@ -82,6 +82,37 @@
               console.log('Error al registrar el Service Worker:', error);
           });
   }
+
+  if ('serviceWorker' in navigator && 'PushManager' in window) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('service-worker.js')
+                    .then(registration => {
+                        registration.update();
+                    })
+                    .catch(error => {
+                        console.error('Error al registrar el Service Worker:', error);
+                    });
+                
+                // Mostrar el banner de instalación cuando el Service Worker esté listo
+                navigator.serviceWorker.ready
+                    .then(registration => {
+                        if (!registration.active) {
+                            return;
+                        }
+
+                        if (registration.active.state === 'activated' && !window.navigator.standalone) {
+                            registration.showNotification('¡Instala esta aplicación!', {
+                                actions: [{
+                                    action: 'install',
+                                    title: 'Instalar'
+                                }],
+                                requireInteraction: true,
+                                tag: 'install-pwa-notification'
+                            });
+                        }
+                    });
+            });
+        }
   </script>
 
 <script>
