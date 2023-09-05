@@ -132,7 +132,7 @@
 window.addEventListener('beforeinstallprompt', (e) => {
     // Evitar que el navegador muestre su propia solicitud de instalación
     e.preventDefault();
-    
+    alert(e);
     // Almacenar el evento para su uso posterior
     deferredPrompt = e;
 
