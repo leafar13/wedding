@@ -56,5 +56,22 @@ body {
 
  
 
+  .btn {
+    font-family: 'The Seasons', sans-serif;
+    font-size: 20px;
+    width: 100%; /* Ancho igual al de la pantalla */
+    padding: 10px; /* Espacio interior del botón, ajusta según sea necesario */
+    color: #ffffff;
+    background-color: #EAB884; /* Color de fondo */
+    text-align: center;
+    border: none; /* Sin borde */
+    cursor: pointer;
+    text-align: center; /* Alineación del texto */
+    text-decoration: none; /* Sin subrayado */
+    display: inline-block; /* Mostrar como bloque en línea */
+}
 
+.btn:hover {
+    background-color: #d5a878; /* Cambio de color de fondo al pasar el mouse */
+}
 
