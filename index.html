@@ -119,8 +119,12 @@
 
 
 </div>
-<button id="install-button" class="btn" >Descarga aquí tu invitación para tenerla presente</button>
 
+<div id="install-button"  class="button-container">
+  <img class="flower-image" src="resources/flores.png" alt="Flor Izquierda">
+  <button class="btn" >Descarga aquí tu invitación para tenerla presente</button>
+  <img class="flower-image" src="resources/flores.png" alt="Flor Derecha">
+</div>
 <script>
   let deferredPrompt; // Almacenar el evento antes de la instalación
   var botonInstalar=document.getElementById('install-button');
@@ -133,7 +137,7 @@ window.addEventListener('beforeinstallprompt', (e) => {
     deferredPrompt = e;
 
     // Mostrar el botón de instalación
-    botonInstalar.style.display = 'block';
+    botonInstalar.style.display = 'flex';
 });
 
 // Manejar el clic en el botón de instalación

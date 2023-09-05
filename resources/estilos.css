@@ -61,8 +61,8 @@ body {
     font-size: 20px;
     width: 100%; /* Ancho igual al de la pantalla */
     padding: 10px; /* Espacio interior del botón, ajusta según sea necesario */
-    color: #ffffff;
-    background-color: #EAB884; /* Color de fondo */
+    color: #7D5642;
+    background-color: transparent; /* Color de fondo */
     text-align: center;
     border: none; /* Sin borde */
     cursor: pointer;
@@ -72,6 +72,22 @@ body {
 }
 
 .btn:hover {
-    background-color: #d5a878; /* Cambio de color de fondo al pasar el mouse */
+    background-color: transparent; /* Cambio de color de fondo al pasar el mouse */
+}
+
+
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+
+/* Estilos para las imágenes de flores en los lados */
+.flower-image {
+    width: 30px; /* Ancho de la imagen de la flor */
+    height: 30px; /* Alto de la imagen de la flor */
+    margin-right: 10px; /* Espacio entre la imagen de la flor y el botón */
+    margin-left: 10px; /* Espacio entre la imagen de la flor y el botón */
 }
 
