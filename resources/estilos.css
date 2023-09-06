@@ -7,7 +7,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: 'The Seasons', sans-serif;
-    font-size: 2vh;
+    font-size: 2.3vh;
     color: #7D5642;
     text-align: center;
     padding: 20px;
@@ -25,7 +25,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: 'The Seasons', sans-serif;
-    font-size: 2.9vh;
+    font-size: 2.5vh;
     color: #7D5642;
     text-align: center;
 }
@@ -33,11 +33,11 @@
 #espacios {
     white-space: nowrap;
     position: fixed;
-    top:86%;
+    top:87%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: 'The Seasons', sans-serif;
-    font-size: 2vh;
+    font-size: 2.1vh;
     color: #7D5642;
     text-align: center;
 }
