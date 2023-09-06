@@ -3,11 +3,11 @@
 #countdown {
     white-space: nowrap;
     position: fixed;
-    top: 59%;
+    top: 57%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: 'The Seasons', sans-serif;
-    font-size: 2.3vh;
+    font-size: 2.5vh;
     color: #7D5642;
     text-align: center;
     padding: 20px;
@@ -21,7 +21,7 @@
 #mensaje {
     white-space: nowrap;
     position: fixed;
-    top:16%;
+    top:15%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: 'The Seasons', sans-serif;
