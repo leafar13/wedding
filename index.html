@@ -22,7 +22,22 @@
      src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFs_ZY5Zps&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
    </iframe>
 
-<div id="countdown"></div><div id="mensaje"></div><div id="espacios"></div>
+<div id="countdown"></div><div id="mensaje"></div><div id="espacios"></div><a href="#" id="confirmar">Confirma tu asistencia antes del 01 Oct, 2023
+</br>(clic aquí) </a>
+<div id="popup" style="display: none;" class="popup">
+  
+  
+  <div class="popup-contenido">
+      <h2>Indica por favor los espacios a confirmar</h2>
+      <select id="comboBox">
+      </select>
+      <div class="botones">
+          <button id="aceptar">Aceptar</button>
+          <button id="cancelar">Cancelar</button>
+      </div>
+  </div>
+</div>
+
   <script>
     // Obtener el valor del parámetro "mensaje" desde la URL
     const params = new URLSearchParams(window.location.search);
@@ -68,6 +83,31 @@
 
   // Aplica el manifiesto dinámico a través del marcador de posición
   document.querySelector('#my-manifest-placeholder').setAttribute('href', manifestURL);
+
+// Obtiene la referencia al elemento de enlace
+var enlace = document.getElementById('confirmar');
+  
+  // Define la URL personalizada que deseas agregar
+  var urlPersonalizada = 'https://wa.me/+50683153937?text=Hola+quiero+confirmar+mi+asistencia+'+mensaje;
+  
+  // Agrega un manejador de eventos al enlace para redirigir a la URL personalizada
+  enlace.addEventListener('click', function(event) {
+    event.preventDefault(); // Evita que el enlace siga el href predeterminado
+    window.location.href = urlPersonalizada; // Redirige a la URL personalizada
+  });
+  var comboBox = document.getElementById('comboBox');
+    // Limpiar opciones existentes
+    comboBox.innerHTML = '';
+
+    // Agregar opciones según la cantidad
+    for (var i = 1; i <= espacios; i++) {
+        var option = document.createElement('option');
+        option.value = i;
+        option.textContent = i;
+        comboBox.appendChild(option);
+    }
+    comboBox.value = espacios;
+
 </script>
 
 
@@ -168,7 +208,7 @@ if(deferredPrompt === undefined){
 
   
    <script src="resources/cuenta_regresiva.js"></script> <!-- Agregamos el archivo JavaScript -->
-   
+   <script src="resources/popup.js"></script>
 
 
 </body></html>
