@@ -22,7 +22,7 @@
      src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFs_ZY5Zps&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
    </iframe>
 
-<div id="countdown"></div><div id="mensaje"></div><div id="espacios"></div><a href="#" id="confirmar">Confirma tu asistencia antes del 01 Oct, 2023
+<div id="countdown"></div><div id="mensaje"></div><div id="espacios"></div><a href="#" id="abrirPopup">Confirma tu asistencia antes del 01 Oct, 2023
 </br>(clic aquí) </a>
 <div id="popup" style="display: none;" class="popup">
   
@@ -84,17 +84,7 @@
   // Aplica el manifiesto dinámico a través del marcador de posición
   document.querySelector('#my-manifest-placeholder').setAttribute('href', manifestURL);
 
-// Obtiene la referencia al elemento de enlace
-var enlace = document.getElementById('confirmar');
-  
-  // Define la URL personalizada que deseas agregar
-  var urlPersonalizada = 'https://wa.me/+50683153937?text=Hola+quiero+confirmar+mi+asistencia+'+mensaje;
-  
-  // Agrega un manejador de eventos al enlace para redirigir a la URL personalizada
-  enlace.addEventListener('click', function(event) {
-    event.preventDefault(); // Evita que el enlace siga el href predeterminado
-    window.location.href = urlPersonalizada; // Redirige a la URL personalizada
-  });
+
   var comboBox = document.getElementById('comboBox');
     // Limpiar opciones existentes
     comboBox.innerHTML = '';
