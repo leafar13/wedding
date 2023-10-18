@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
       // Si la fecha objetivo ha pasado, mostrar un mensaje especial
       if (tiempoRestante < 0) {
         clearInterval(intervalo);
-        countdownElement.innerHTML = "¡Hoy es el gran día!";
+        countdownElement.innerHTML = "¡Gracias por acompañarnos en esta fecha especial!";
       }
     }, 1000);
   });
